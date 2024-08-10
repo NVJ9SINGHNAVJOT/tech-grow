@@ -1,0 +1,176 @@
+/* ===== google fonts ===== */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== standardizing elements ===== */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #afb2bf;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000814;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #afb2bf;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+*:active::-webkit-scrollbar-thumb,
+*:focus::-webkit-scrollbar-thumb,
+*:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+/* ===== css configuration for design components ===== */
+/* custom classes naming start with ct eg: ct-logoShine */
+
+/* login page background */
+.ct-login-bg {
+  background-image: linear-gradient(
+    45deg,
+    hsl(270deg 100% 7%) 1%,
+    hsl(222deg 49% 17%) 44%,
+    hsl(207deg 50% 24%) 50%,
+    hsl(199deg 42% 32%) 51%,
+    hsl(191deg 31% 42%) 50%,
+    hsl(181deg 22% 53%) 49%,
+    hsl(166deg 26% 66%) 50%,
+    hsl(144deg 34% 81%) 56%,
+    hsl(104deg 100% 95%) 99%
+  );
+}
+
+/* dashboard sidebar */
+.ct-dashboard-sidebar {
+  background-image: linear-gradient(
+    0deg,
+    hsl(210deg 74% 35%) 0%,
+    hsl(210deg 73% 33%) 0%,
+    hsl(211deg 71% 30%) 2%,
+    hsl(211deg 69% 28%) 4%,
+    hsl(212deg 66% 24%) 8%,
+    hsl(213deg 61% 21%) 16%,
+    hsl(216deg 51% 17%) 31%,
+    hsl(248deg 17% 9%) 98%
+  );
+}
+
+/* dashboard outlet */
+.ct-dashboard-top {
+  background-image: linear-gradient(109.6deg, rgba(228, 107, 232, 1) 11.2%, rgba(87, 27, 226, 1) 96.7%);
+}
+
+/* settings background */
+.ct-settings {
+  background-image: linear-gradient(
+    145deg,
+    hsl(270deg 100% 7%) 0%,
+    hsl(258deg 44% 12%) 5%,
+    hsl(259deg 31% 16%) 10%,
+    hsl(259deg 23% 20%) 15%,
+    hsl(258deg 18% 24%) 20%,
+    hsl(257deg 13% 28%) 24%,
+    hsl(256deg 10% 32%) 29%,
+    hsl(253deg 8% 37%) 33%,
+    hsl(249deg 5% 41%) 37%,
+    hsl(241deg 4% 46%) 40%,
+    hsl(228deg 3% 50%) 44%,
+    hsl(207deg 2% 54%) 47%,
+    hsl(171deg 2% 59%) 50%,
+    hsl(144deg 4% 64%) 52%,
+    hsl(128deg 6% 69%) 54%,
+    hsl(118deg 9% 74%) 56%,
+    hsl(112deg 14% 80%) 57%,
+    hsl(108deg 23% 85%) 58%,
+    hsl(106deg 42% 90%) 57%,
+    hsl(104deg 100% 95%) 56%
+  );
+}
+
+.ct-user {
+  background-image: radial-gradient(circle 815px at 23.4% -21.8%, rgba(9, 29, 85, 1) 0.2%, rgba(0, 0, 0, 1) 100.2%);
+}
+
+/* ===== css configuration for shadcn ui ===== */
+/* do not edit it */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    /* custom colors added for shadcn */
+    --chart-1: 173 58% 39%;
+    --chart-2: 12 76% 61%;
+    --chart-3: 43 74% 66%;
+    --chart-4: 27 87% 67%;
+    --chart-5: 60 80% 70%;
+    --chart-6: 242, 97%, 87%;
+    --chart-7: 160, 91%, 92%;
+    --chart-8: 245, 75%, 61%;
+    --chart-9: 262, 94%, 82%;
+    --chart-10: 119, 83%, 74%;
+    --chart-11: 20, 95%, 80%;
+    --chart-12: 164, 100%, 86%;
+    --chart-13: 76, 99%, 85%;
+    --chart-14: 310, 98%, 98%;
+    --chart-15: 38, 30%, 97%;
+    --chart-16: 194, 99%, 64%;
+    --chart-17: 229, 94%, 76%;
+    --chart-18: 329, 93%, 53%;
+    --chart-19: 271, 98%, 80%;
+    --chart-20: 72, 67%, 89%;
+    --chart-21: 335, 87%, 86%;
+    --chart-22: 173, 78%, 81%;
+    --chart-23: 298, 98%, 77%;
+    --chart-24: 244, 79%, 51%;
+    --chart-25: 351, 90%, 92%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
