@@ -3,3 +3,7 @@ dist
 node_modules
 .prettierc
 .prettierignore
+README.md
+.vscode
+.gitignore
+.gitattributes

@@ -27,9 +27,10 @@ TechGrow is a CRM web application.
    ```
    cd tech-grow
    npm install
-   npm run dev
+   npm run build
+   npm run preview
    ```
 
-- Open the project in your browser at [`http://localhost:5173`](http://localhost:5173).
+- Open the project in your browser at [`http://localhost:4173`](http://localhost:4173).
 
  

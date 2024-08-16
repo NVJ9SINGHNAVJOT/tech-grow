@@ -2,21 +2,14 @@
 version: "3.8"
 
 volumes:
-  talkverse-frontend:
-
-networks:
-  proxy:
-    external: true
+  tech-grow-frontend:
 
 services:
-  talkverse-frontend:
+  tech-grow-frontend:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: talkverse-frontend
+    container_name: tech-grow-frontend
     volumes:
-      - talkverse-frontend:/usr/src/app
-    networks:
-      - proxy
-    ports: [4173:4173] # disable in production
-    env_file: .env
+      - tech-grow-frontend:/usr/src/app
+    ports: [4173:4173]
