@@ -1,15 +1,14 @@
 ---
 version: "3.8"
 
-volumes:
-  tech-grow-frontend:
-
+networks:
+  proxy:
+    external: true
+    
 services:
   tech-grow-frontend:
     build:
       context: .
       dockerfile: Dockerfile
     container_name: tech-grow-frontend
-    volumes:
-      - tech-grow-frontend:/usr/src/app
     ports: [4173:4173]
