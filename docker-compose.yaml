@@ -1,9 +1,6 @@
 ---
 version: "3.8"
 
-networks:
-  proxy:
-    external: true
     
 services:
   tech-grow-frontend:
@@ -12,3 +9,7 @@ services:
       dockerfile: Dockerfile
     container_name: tech-grow-frontend
     ports: [4173:4173]
+
+networks:
+  proxy:
+    external: true
